@@ -1,0 +1,121 @@
+@import url("../style.css");
+
+nav {
+  background-color: var(--color-light);
+  height: 70px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey);
+}
+nav ul {
+  display: flex;
+  justify-content: center;;
+}
+nav ul > div {
+  display: none;
+}
+nav ul li a {
+  font-family: var(--secondary-font);
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 13px;
+  border-radius: 10px;
+}
+li a.active-a, li a:hover {
+  background-color: rgb(102, 178, 139);
+  transition: .5s;
+  color: var(--color-light);
+}
+.checkbtn {
+  font-size: 30px;
+  color: var(--color-light);
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .checkbtn {
+    display: flex;
+  }
+  nav {
+    padding: 0 30px;
+  }
+  nav ul {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--color-light);
+    top: 70px;
+    right: -100%;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav ul > div {
+    width: 70px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    margin: 0 10px 36px 0;
+  }
+  nav ul > div div {
+    cursor: pointer;
+  }
+  nav ul li {
+    width: 100%;
+    padding: 20px 0 20px 40px;
+    border-bottom: 1px solid rgb(102, 178, 139);
+  }
+  nav ul li.active-li {
+    background-color: rgb(102, 178, 139);
+  }
+  nav ul li:hover{
+    background-color: rgb(102, 178, 139);
+  }
+  nav ul li:hover a {
+    color: var(--color-light);
+  }
+  nav ul li a {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  li a:hover , li a.active-a {
+    color: var(--color-light);
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  .help a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .help a div {
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-grey);
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+    font-weight: 600;
+  }
+}
