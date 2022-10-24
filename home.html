@@ -23,7 +23,7 @@
       <label for="check" class="checkbtn">
         <img src="./assets/burger-menu.svg" alt="burgerMenu" id="burger">
       </label>
-      <ul>
+      <ul id="nav-menu">
         <li class="active-li">
           <a class="active-a" href="#">Inicio</a>
         </li>
@@ -60,7 +60,7 @@
           pellentesque.
         </p>
       </div>
-      <img src="./assets/our-company-image.png" alt="Nuestra Empresa">
+      <img src="./assets/nuestra-empresa.svg" alt="Nuestra Empresa">
       <p class="eslogan">"El camino a tu solución"</p>
       <div class="main-cotizar">
         <a href="#">
@@ -70,50 +70,81 @@
     </section>
     <section class="main-fast">
       <div>
-        <img src="./assets/Atencion.png" alt="Atencion rapida y personalizada">
+        <img src="./assets/atencion.svg" alt="Atencion rapida y personalizada">
       </div>
       <div class="main-fast-div">
-        <img src="./assets/1.png" alt="Contactanos">
+        <img src="./assets/1.svg" alt="Contactanos">
         <h3>Contactanos</h3>
         <p>Un asesor calificado estará en constante disposición para asistir todas sus necesidades</p>
       </div>
       <div class="main-fast-div">
-        <img src="./assets/2.png" alt="Desarrollo de bried y propuesta">
+        <img src="./assets/2.svg" alt="Desarrollo de bried y propuesta">
         <h3>Desarrollo de Brief y Propuesta</h3>
         <p>El asesor realizará un informe sobre sus necesidades y creará propuestas para dar solución a su necesidad</p>
       </div>
       <div class="main-fast-div">
-        <img src="./assets/3.png" alt="Puesta en marcha">
+        <img src="./assets/3.svg" alt="Puesta en marcha">
         <h3>Puesta en Marcha</h3>
         <p>El asesor pondrá en marcha la propuesta que dara solucion a su necesidad</p>
       </div>
     </section>
     <section class="main-services">
-      <div>
-        <img src="./assets/Servicios.png" alt="Servicios">
+      <div class="main-services-div1">
+        <img src="./assets/servicios.svg" alt="Servicios">
       </div>
-      <div class="main-services-div">
+      <div class="main-services-div2">
         <div>
           <a href="#">
-            <img src="./assets/Diseño.png" alt="Diseño">
+            <img src="./assets/diseño.svg" alt="Diseño">
           </a>
         </div>
         <div>
           <a href="#">
-            <img src="./assets/Instalacion.png" alt="Instalacion">
+            <img src="./assets/instalacion.svg" alt="Instalacion">
           </a>
         </div>
         <div>
           <a href="#">
-            <img src="./assets/Mantenimiento.png" alt="Mantenimiento">
+            <img src="./assets/mantenimiento.svg" alt="Mantenimiento">
           </a>
         </div>
       </div>
-      <div class="main-cotizar">
+      <div class="main-cotizar main-services-mas">
         <a href="#">
           <button>VER MÁS</button>
         </a>
       </div>
+    </section>
+    <section class="main-section-cotizar">
+      <article>
+        <div>
+          <img src="./assets/cotizar.svg" alt="Cotizar">
+        </div>
+        <div class="main-form">
+          <form action="cotizar">
+            <input type="text" placeholder="Nombre/Apellido" required>
+            <input type="number" placeholder="Celular" required>
+            <input list="servicios" placeholder="Tipo de Servicio" required>
+            <datalist id="servicios">
+              <option value="Diseño"></option>
+              <option value="Instalación"></option>
+              <option value="Mantenimiento"></option>
+            </datalist>
+            <input type="email" id="email" placeholder="Correo" required>
+            <input type="text" placeholder="Ciudad" required>
+            <input id="zona" placeholder="Zona" required>
+            <datalist id="zona">
+              <option value="Rural"></option>
+              <option value="Urbana"></option>
+            </datalist>
+            <div class="main-cotizar">
+              <a href="#">
+                <button>ENVIAR</button>
+              </a>
+            </div>
+          </form>
+        </div>
+      </article>
     </section>
   </main>
 </body>

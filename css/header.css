@@ -51,7 +51,9 @@ li a.active-a, li a:hover {
     padding: 0 30px;
   }
   nav ul {
-    display: flex;
+    display: none;;
+    flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
     width: 100%;
     height: calc(100vh - 70px);
@@ -59,8 +61,6 @@ li a.active-a, li a:hover {
     top: 70px;
     right: -100%;
     transition: all .5s;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   nav ul > div {
     width: 70px;
