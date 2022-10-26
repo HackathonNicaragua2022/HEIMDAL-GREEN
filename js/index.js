@@ -7,13 +7,13 @@ const navMenu = document.getElementById('nav-menu')
 checkBurger.addEventListener('click', function () {
   if (checkBurger.checked === false) {
     background.style.backgroundColor = '#4EA539';
-    burger.src = '../assets/burger-menu.svg'
-    logoClose.src = '../assets/logo-mobile.svg'
+    burger.src = 'heimdal-green/assets/burger-menu.svg'
+    logoClose.src = 'heimdal-green/assets/logo-mobile.svg'
     navMenu.style.display = 'none'
   } else {
     background.style.backgroundColor = 'transparent';
-    burger.src = '../assets/burger-menu-close.svg'
-    logoClose.src = '../assets/logo-mobile-close.svg'
+    burger.src = 'heimdal-green/assets/burger-menu-close.svg'
+    logoClose.src = 'heimdal-green/assets/logo-mobile-close.svg'
     navMenu.style.display = 'flex'
   }
 })
