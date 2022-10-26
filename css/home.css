@@ -182,6 +182,7 @@ body {
   border-bottom: 1px solid var(--secondary-color-dark);
   width: 210px;
   padding: 8px;
+  background-color: transparent;
 }
 .main .main-section-cotizar article .main-form form input::placeholder {
   font-size: 11px;
@@ -212,6 +213,9 @@ footer .footer-div {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+footer .footer-div .footer-logo-complete {
+  margin-top: 10px;
 }
 footer .footer-div .footer-div-contact {
   width: 140px;
