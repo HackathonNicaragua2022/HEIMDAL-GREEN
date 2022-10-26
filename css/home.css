@@ -1,6 +1,9 @@
 @import url("../style.css");
 @import url("../css/header.css");
 
+body {
+  background-color: var(--color-light);
+}
 .main {
   background-color: var(--color-light);
   width: 100%;
@@ -154,7 +157,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 330px;
+  height: 110px;
 }
 .main .main-section-cotizar article {
   position: absolute;
@@ -163,10 +166,76 @@
   align-items: center;
   top: -248px;
 }
-.main .main-section-cotizar article .main-form {
-  display: grid;
-  justify-content: center;
-}
 .main .main-section-cotizar article .main-form form {
+  min-width: 260px;
+  height: 280px;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+.main .main-section-cotizar article .main-form form input {
+  border: none;
+  border-bottom: 1px solid var(--secondary-color-dark);
+  width: 210px;
+  padding: 8px;
+}
+.main .main-section-cotizar article .main-form form input::placeholder {
+  font-size: 11px;
+  font-family: var(--secondary-font);
+  opacity: 60%;
+  line-height: 10;
+}
+.main-form form .button-send {
+  width: 62px;
+  height: 25px;
+  padding: 7px 14px;
+  margin: 24px 120px 0 0;
+  border-radius: 6px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 260px;
+  gap: 30px;
+}
+footer .footer-div {
+  width: 260px;
+  height: 240px;
+  border-top: 1px solid var(--primary-color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-div .footer-div-contact {
+  width: 140px;
+  height: 28px;
+  border-bottom: 1px solid var(--secondary-color-light);
+}
+footer .footer-div .footer-div-contact h4 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
   text-align: center;
+  opacity: .9;
+  padding: 2px;
+}
+footer .footer-div .footer-div-whats {
+  margin-top: 5px;
+}
+footer span {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+  color: var(--secondary-color-dark);
 }
