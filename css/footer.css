@@ -1,0 +1,47 @@
+@import url("../style.css");
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 260px;
+  gap: 30px;
+}
+footer .footer-div {
+  width: 260px;
+  height: 240px;
+  border-top: 1px solid var(--primary-color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-div .footer-logo-complete {
+  margin-top: 10px;
+}
+footer .footer-div .footer-div-contact {
+  width: 140px;
+  height: 28px;
+  border-bottom: 1px solid var(--secondary-color-light);
+}
+footer .footer-div .footer-div-contact h4 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  opacity: .9;
+  padding: 2px;
+}
+footer .footer-div .footer-div-whats {
+  margin-top: 5px;
+}
+footer span {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+  color: var(--secondary-color-dark);
+}
