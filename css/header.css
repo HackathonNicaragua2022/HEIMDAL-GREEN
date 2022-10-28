@@ -12,7 +12,7 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
 }
 nav ul > div {
   display: none;
@@ -35,6 +35,12 @@ li a.active-a, li a:hover {
   color: var(--color-light);
   cursor: pointer;
   display: none;
+}
+.scroll {
+  position: fixed;
+  right: 24px;
+  bottom: 44px;
+  z-index: 1;
 }
 #check {
   display: none;
