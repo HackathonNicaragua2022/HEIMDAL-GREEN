@@ -11,12 +11,13 @@ body {
 /* Nuestra Empresa section*/
 .main .main-our {
   background-color: var(--secondary-color-dark);
-  height: 210px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
+  border-radius: 0px 0px 20px 20px;
 }
 .main .main-our > div h2 {
   font-family: var(--primary-font);
@@ -46,4 +47,61 @@ body {
   font-family: var(--secondary-font);
   color: var(--color-light);
   line-height: 14px;
+}
+
+/* Main-info */
+
+.main .main-info {
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .main-info .mision,
+.main .main-info .vision,
+.main .main-info .objetivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.objetivo {
+  margin-bottom: 50px;
+}
+.main .main-info .mision p,
+.main .main-info .vision p,
+.main .main-info .objetivo p {
+  width: 250px;
+  height: 56px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.main .main-info .mision .mision-div img,
+.main .main-info .vision .vision-div img,
+.main .main-info .objetivo .objetivo-div img {
+  border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+  height: 20vh;
+  background-color: var(--secondary-color-dark);
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-div {
+  width: 200px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
