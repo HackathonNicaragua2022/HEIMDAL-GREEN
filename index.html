@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/home.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <script defer src="./js/index.js"></script>
+  <script defer src="./js/formCotizar.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
   </header>
   <main class="main">
     <section class="main-our">
-      <div>
+      <div class="main-our-h2">
         <h2>Nuestra Empresa</h2>
         <div class="main-our-background" id="background"></div>
       </div>
@@ -71,70 +72,72 @@
       </div>
     </section>
     <section class="main-fast">
-      <div>
+      <div class="atencion">
         <img src="./assets/atencion.svg" alt="Atencion rapida y personalizada">
       </div>
-      <div class="main-fast-div">
+      <div class="main-fast-div f">
         <img src="./assets/1.svg" alt="Contactanos">
         <h3>Contactanos</h3>
         <p>Un asesor calificado estará en constante disposición para asistir todas sus necesidades</p>
       </div>
-      <div class="main-fast-div">
+      <div class="main-fast-div s">
         <img src="./assets/2.svg" alt="Desarrollo de bried y propuesta">
         <h3>Desarrollo de Brief y Propuesta</h3>
         <p>El asesor realizará un informe sobre sus necesidades y creará propuestas para dar solución a su necesidad</p>
       </div>
-      <div class="main-fast-div">
+      <div class="main-fast-div t">
         <img src="./assets/3.svg" alt="Puesta en marcha">
         <h3>Puesta en Marcha</h3>
         <p>El asesor pondrá en marcha la propuesta que dara solucion a su necesidad</p>
       </div>
     </section>
     <section class="main-services">
-      <div class="main-services-div1">
-        <img src="./assets/servicios.svg" alt="Servicios">
+      <div class="main-services-div">
+        <h2>Servicios</h2>
+        <div class="background"></div>
       </div>
       <div class="main-services-div2">
         <div>
-          <a href="#">
+          <a href="./servicios.html">
             <img src="./assets/diseño.svg" alt="Diseño">
           </a>
         </div>
         <div>
-          <a href="#">
+          <a href="./servicios.html">
             <img src="./assets/instalacion.svg" alt="Instalacion">
           </a>
         </div>
         <div>
-          <a href="#">
+          <a href="./servicios.html">
             <img src="./assets/mantenimiento.svg" alt="Mantenimiento">
           </a>
         </div>
       </div>
       <div class="main-cotizar main-services-mas">
-        <a href="#">
+        <a href="./servicios.html">
           <button>VER MÁS</button>
         </a>
       </div>
     </section>
     <section class="main-section-cotizar">
       <article>
-        <div>
-          <img src="./assets/cotizar.svg" alt="Cotizar">
+        <div class="main-cotizar-div">
+          <h2>Cotizar</h2>
+          <div class="background-cotizar"></div>
         </div>
         <div class="main-form">
-          <form action="cotizar">
-            <input type="text" placeholder="Nombre/Apellido" required>
-            <input type="number" placeholder="Celular" required>
-            <input list="servicios" placeholder="Tipo de Servicio" required>
+          <form id="form" action="">
+            <input name="nombre" type="text" placeholder="Nombre/Apellido" required>
+            <input name="celular" type="number" placeholder="Celular" min="8" required>
+            <input name="servicios" list="servicios" placeholder="Tipo de Servicio" required>
             <datalist id="servicios">
               <option value="Diseño"></option>
               <option value="Instalación"></option>
               <option value="Mantenimiento"></option>
             </datalist>
-            <input type="email" id="email" placeholder="Correo" required>
-            <input type="text" placeholder="Ciudad" required>
-            <input list="zona" placeholder="Zona" required>
+            <input name="email" type="email" id="email" placeholder="Correo" required>
+            <input name="ciudad" type="text" placeholder="Ciudad" required>
+            <input name="zona" list="zona" placeholder="Zona" required>
             <datalist id="zona">
               <option value="Rural"></option>
               <option value="Urbana"></option>
@@ -144,6 +147,7 @@
                 <button>ENVIAR</button>
               </a>
             </div>
+            <a id="correo" href="mailto:heimdalgreen@gmail.com">
           </form>
         </div>
       </article>
@@ -151,36 +155,25 @@
   </main>
   <footer>
     <div class="footer-div">
-      <img class="footer-logo-complete" src="./assets/logo-heimdal-complete.svg" alt="logo">
-      <div>
-        <a href="https://www.facebook.com/profile.php?id=100086779404581">
-          <img src="./assets/facebook.svg" alt="facebook">
-        </a>
-        <a href="https://instagram.com/heimdalgreen?igshid=YmMyMTA2M2Y=">
-          <img src="./assets/instagram.svg" alt="instagram">
-        </a>
-        <a href="https://twitter.com/HeimdalGreenNic?t=vOm_MrIiRuCpWW7In8rtgQ&s=08">
-          <img src="./assets/twitter.svg" alt="twitter">
-        </a>
-      </div>
-      <div class="footer-div-contact">
-        <h4>Contacto</h4>
-      </div>
-      <div class="footer-div-whats">
-        <a href="https://wa.me/78091992">
-          <img src="./assets/whatsapp.svg" alt="whatsapp">
-        </a>
-      </div>
-      <div>
-        <a href="mailto:heimdalgreen@gmail.com">
-          <img src="./assets/email.svg" alt="email heimdal green">
-        </a>
-      </div>
-      <div>
-        <img src="./assets/impulsado.svg" alt="impulsados por hackathon">
-      </div>
+      <a href="https://www.facebook.com/profile.php?id=100086779404581" target="_blanks">
+        <img src="./assets/facebook-white.svg" alt="facebook">
+      </a>
+      <a href="https://instagram.com/heimdalgreen?igshid=YmMyMTA2M2Y=" target="_blanks">
+        <img src="./assets/instagram-white.svg" alt="instagram">
+      </a>
+      <a href="https://twitter.com/HeimdalGreenNic?t=vOm_MrIiRuCpWW7In8rtgQ&s=08" target="_blanks">
+        <img src="./assets/twiter-white.svg" alt="twitter">
+      </a>
+      <a href="https://wa.me/78091992" target="_blanks">
+        <img src="./assets/whatsapp-white.svg" alt="whatsapp">
+      </a>
+      <a href="mailto:heimdalgreen@gmail.com">
+        <img src="./assets/email-white.svg" alt="email">
+      </a>
     </div>
-    <span>Derecho Reservado ©</span>
+    <div>
+      <img src="./assets/logo-white.svg" alt="logo heimdal green">
+    </div>
   </footer>
 </body>
 

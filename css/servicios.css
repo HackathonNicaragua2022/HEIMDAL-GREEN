@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+.main .diseño h2,
 .main .main-servicios h2 {
   font-family: var(--primary-font);
   text-align: center;
@@ -17,6 +18,16 @@ body {
   font-weight: 500;
   color: var(--color-light);
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
+}
+.background {
+  position: relative;
+  left: 16px;
+  top: -11px;
+  width: 98px;
+  height: 10px;
+  background-color: var(--primary-color-light);
+  opacity: 0.3;
+  border-radius: 2px;
 }
 .main .main-servicios .main-servicios-background {
   position: relative;

@@ -90,7 +90,25 @@ button {
   text-align: center;
   color: var(--color-dark);
 }
-
+.informacion .informacion-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+  gap: 24px;
+}
+.informacion .informacion-div a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.informacion .informacion-div a p {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--secondary-color-dark);
+}
 /* Footer */
 
 footer {
