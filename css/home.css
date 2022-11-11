@@ -8,154 +8,9 @@ body {
   background-color: var(--color-light);
   width: 100%;
 }
-/* .main .main-our {
-  min-height: 780px;
-  background-color: var(--secondary-color-dark);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-.main-our-h2 {
-  grid-row: 2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-our-h2 h2 {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 69px;
-  text-align: center;
-  color: var(--color-light);
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
-}
-.main-our-background {
-  position: relative;
-  left: 20%;
-  top: -24px;
-  background-color: var(--primary-color-light);
-  width: 440px;
-  height: 25px;
-  opacity: 0.3;
-  border-radius: 2px;
-}
-.main-p {
-  grid-row: 3;
-  text-align: center;
-}
-.main-p p {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  color: var(--color-light);
-}
-.main-our img {
-  margin: 0 auto;
-  grid-column: 2;
-  grid-row: 2 / 4;
-  width: 422px;
-  height: 422px;
-}
-.main-our p {
-  padding-top: 43px;
-  grid-column: 2;
-  grid-row: 4;
-  text-align: center;
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-light);
-}
-.main-cotizar {
-  grid-row: 4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 190px;
-  height: 78px;
-  background: var(--primary-color-fusion);
-  border-radius: 10px;
-  margin: 0 auto;
-}
-.main-cotizar a button {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  color: var(--color-light);
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28;
-}
-.main-fast {
-  height: 880px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-}
-.atencion {
-  grid-column: 2 / 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.atencion img{
-  width: 660px;
-  height: 160px;
-}
-.main-fast-div {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 0 20px;
-}
-.main-fast-div img {
-  width: 210px;
-  height: 210px;
-}
-.main-fast-div h3,
-.main-fast-div p {
-  text-align: center;
-}
-.main-fast-div h3 {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 46px;
-  color: var(--secondary-color-dark)
-}
-.main-fast-div p {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-dark);
-}
-.f {
-  grid-column: 1 / 3;
-  grid-row: 2;
-}
-.s {
-  grid-column: 3;
-  grid-row: 2;
-}
-.t {
-  grid-column: 4 / 6;
-  grid-row: 2;
-}
 
-  /* Nuestra Empresa section*/
-.main .main-our {
+/* Nuestra Empresa section*/
+.main-our {
   background-color: var(--secondary-color-dark);
   min-height: 370px;
   display: flex;
@@ -165,9 +20,9 @@ body {
   border-radius: 0px 0px 20px 20px;
   gap: 16px;
 }
-.main .main-services > div h2,
-.main .main-section-cotizar article > div h2,
-.main .main-our .main-our-h2 h2 {
+.main-services > div h2,
+.main-section-cotizar article > div h2,
+.main-our-h2 h2 {
   font-family: var(--primary-font);
   text-align: center;
   font-size: 24px;
@@ -175,7 +30,7 @@ body {
   color: var(--color-light);
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
 }
-.main .main-services .main-services-div {
+.main-services-div {
   margin-top: 50px;
 }
 .main-cotizar-div {
@@ -183,7 +38,7 @@ body {
 }
 .background,
 .background-cotizar,
-.main .main-our .main-our-h2 .main-our-background {
+.main-our-background {
   position: relative;
   left: 16px;
   top: -11px;
@@ -201,22 +56,22 @@ body {
   width: 79px;
   top: -11px;
 }
-.main .main-p {
+.main-p {
   width: 280px;
   text-align: center;
 }
-.main .main-our .main-p p {
+.main-p p {
   font-size: 12px;
   font-weight: 400;
   font-family: var(--secondary-font);
   color: var(--color-light);
   line-height: 14px;
 }
-.main .main-our img {
+.main-our img {
   width: 130px;
   height: 130px;
 }
-.main .main-our .eslogan {
+.eslogan {
   font-family: var(--secondary-font);
   font-size: 12px;
   font-weight: 300;
@@ -224,7 +79,7 @@ body {
   line-height: 14px;
   color: var(--color-light);
 }
-.main .main-cotizar {
+.main-cotizar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,9 +88,9 @@ body {
   background: var(--primary-color-fusion);
   border-radius: 10px;
 }
-.main .main-our a button,
-.main .main-services a button,
-.main .main-section-cotizar a button {
+.main-our a button,
+.main-services a button,
+.main-section-cotizar a button {
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -249,7 +104,7 @@ body {
 }
 
 /* Atencion rapida y personalizada section*/
-.main .main-fast {
+.main-fast {
   width: 100%;
   height: 810px;
   display: flex;
@@ -257,10 +112,10 @@ body {
   align-items: center;
   gap: 35px;
 }
-.main .main-fast > div {
+.main-fast > div {
   margin-top: 24px;
 }
-.main .main-fast .main-fast-div {
+.main-fast-div {
   width: 200px;
   height: 164px;
   display: flex;
@@ -269,18 +124,18 @@ body {
   align-items: center;
   gap: 18px;
 }
-.main .main-fast .main-fast-div h3,
-.main .main-fast .main-fast-div p {
+.main-fast-div h3,
+.main-fast-div p {
   text-align: center;
 }
-.main .main-fast .main-fast-div h3 {
+.main-fast-div h3 {
   font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 500;
   line-height: 23px;
   color: var(--secondary-color-light);
 }
-.main .main-fast .main-fast-div p {
+.main-fast-div p {
   font-family: var(--secondary-font);
   font-size: 12px;
   font-weight: 400;
@@ -288,7 +143,7 @@ body {
 }
 
 /* Servicios section*/
-.main .main-services {
+.main-services {
   background-color: var(--secondary-color-dark);
   height: 624px;
   display: flex;
@@ -299,7 +154,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main .main-services .main-services-div1 {
+.main-services-div1 {
   margin-top: 50px;
 }
 .main-services-div2 {
@@ -314,7 +169,7 @@ body {
 }
 
 /*Cotizar section*/
-.main .main-section-cotizar {
+.main-section-cotizar {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -322,14 +177,14 @@ body {
   width: 100%;
   height: 110px;
 }
-.main .main-section-cotizar article {
+.main-section-cotizar article {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: -248px;
 }
-.main .main-section-cotizar article .main-form form {
+.main-form form {
   min-width: 260px;
   height: 280px;
   background-color: var(--color-light);
@@ -340,20 +195,20 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
-.main .main-section-cotizar article .main-form form input {
+.main-form form input {
   border: none;
   border-bottom: 1px solid var(--secondary-color-dark);
   width: 210px;
   padding: 8px;
   background-color: transparent;
 }
-.main .main-section-cotizar article .main-form form input::placeholder {
+.main-form form input::placeholder {
   font-size: 11px;
   font-family: var(--secondary-font);
   opacity: 60%;
   line-height: 10;
 }
-.main-form form .button-send {
+.button-send {
   width: 62px;
   height: 25px;
   padding: 7px 14px;
@@ -363,4 +218,153 @@ body {
 #correo {
   display: 0;
   opacity: 0;
+}
+
+@media (min-width: 890px) {
+  .main-our {
+    max-height: 560px;
+    background-color: var(--secondary-color-dark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0;
+  }
+  .main-our-h2 {
+    grid-row: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-our-h2 h2 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 69px;
+    text-align: center;
+    color: var(--color-light);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
+  }
+  .main-our-background {
+    position: relative;
+    left: 20%;
+    top: -24px;
+    background-color: var(--primary-color-light);
+    width: 400px;
+    height: 20px;
+    opacity: 0.3;
+    border-radius: 2px;
+  }
+  .main-p {
+    min-width: 500px;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main-p p {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-light);
+  }
+  .main-our img {
+    margin: 0 auto;
+    grid-column: 2;
+    grid-row: 2 / 4;
+    width: 340px;
+    height: 340px;
+  }
+  .main-our .eslogan {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-light);
+  }
+  .main-cotizar {
+    grid-row: 4;
+    display: flex;
+    width: 140px;
+    height: 60px;
+    background: var(--primary-color-fusion);
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .main-cotizar a button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--color-light);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28;
+  }
+  .main-fast {
+    height: 880px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .atencion {
+    grid-column: 2 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .atencion img{
+    width: 660px;
+    height: 160px;
+  }
+  .main-fast-div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 20px;
+  }
+  .main-fast-div img {
+    width: 210px;
+    height: 210px;
+  }
+  .main-fast-div h3,
+  .main-fast-div p {
+    text-align: center;
+  }
+  .main-fast-div h3 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--secondary-color-dark)
+  }
+  .main-fast-div p {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-dark);
+  }
+  .f {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+  .s {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .t {
+    grid-column: 4 / 6;
+    grid-row: 2;
+  }
 }
