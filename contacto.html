@@ -53,16 +53,21 @@
       <div class="form-h2">
         <h2>Formulario de Contacto</h2>
       </div>
-      <form action="">
-        <input type="text" placeholder="Nombres/Apellidos" required>
-        <input type="email" placeholder="Correo" required>
-        <input type="number" placeholder="Celular" required>
-        <input type="text" placeholder="Ciudad" required>
+      <form id="form" action="https://formsubmit.co/10b15f55c31fca509b2b69dfb4aff63c" method="POST">
+        <input name="nombre" type="text" placeholder="Nombres/Apellidos" required>
+        <input name="email" type="email" placeholder="Correo" required>
+        <input name="celular" type="number" placeholder="Celular" required>
+        <input name="ciudad" type="text" placeholder="Ciudad" required>
         <div class="main-cotizar button-send">
           <a href="#">
             <button>ENVIAR</button>
           </a>
         </div>
+        <input type="hidden" name="_next" value="https://joorkar.github.io/heimdal-green/contacto.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Form">
+        <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> -->
       </form>
     </section>
     <section class="informacion">

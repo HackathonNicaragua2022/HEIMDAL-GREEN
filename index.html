@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./css/home.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <script defer src="./js/index.js"></script>
-  <script defer src="./js/formCotizar.js"></script>
 </head>
 
 <body>
@@ -126,7 +125,7 @@
           <div class="background-cotizar"></div>
         </div>
         <div class="main-form">
-          <form id="form" action="">
+          <form id="form" action="https://formsubmit.co/10b15f55c31fca509b2b69dfb4aff63c" method="POST">
             <input name="nombre" type="text" placeholder="Nombre/Apellido" required>
             <input name="celular" type="number" placeholder="Celular" min="8" required>
             <input name="servicios" list="servicios" placeholder="Tipo de Servicio" required>
@@ -147,7 +146,11 @@
                 <button>ENVIAR</button>
               </a>
             </div>
-            <a id="correo" href="mailto:heimdalgreen@gmail.com">
+            <input type="hidden" name="_next" value="https://joorkar.github.io/heimdal-green/">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Form">
+            <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> -->
           </form>
         </div>
       </article>

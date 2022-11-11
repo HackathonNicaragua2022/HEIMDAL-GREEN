@@ -27,16 +27,22 @@
         <h3>Ayuda/Comentario</h3>
       </div>
       <div class="main-form">
-        <form action="cotizar">
-          <input type="text" placeholder="Nombre/Apellido" required>
-          <input type="email" placeholder="Correo" required>
-          <input type="text" placeholder="Asunto" required>
-          <input class="mensaje" type="text" placeholder="Mensaje" minlength="0" maxlength="150" required>
+        <form action="https://formsubmit.co/10b15f55c31fca509b2b69dfb4aff63c" method="POST">
+          <input name="nombre" type="text" placeholder="Nombre/Apellido" required>
+          <input name="email" type="email" placeholder="Correo" required>
+          <input name="asunto" type="text" placeholder="Asunto" required>
+          <input name="mensaje" class="mensaje" type="text" placeholder="Mensaje" minlength="0" maxlength="150"
+            required>
           <div class="main-cotizar button-send">
             <a href="#">
               <button>ENVIAR</button>
             </a>
           </div>
+          <input type="hidden" name="_next" value="https://joorkar.github.io/heimdal-green/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New Form">
+          <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> -->
         </form>
       </div>
     </section>
