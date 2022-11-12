@@ -1,6 +1,8 @@
 @import url("../style.css");
 
 nav {
+  position: fixed;
+  z-index: 1;
   background-color: var(--color-light);
   height: 70px;
   width: 100%;
@@ -48,6 +50,10 @@ li a.active-a, li a:hover {
   bottom: 44px;
   z-index: 1;
 }
+.scroll img {
+  width: 48px;
+  height: 48px;
+}
 #check {
   display: none;
 }
@@ -60,6 +66,7 @@ li a.active-a, li a:hover {
     display: flex;
   }
   nav {
+    position: static;
     width: 100%;
     padding: 0 30px;
   }
@@ -133,5 +140,9 @@ li a.active-a, li a:hover {
     padding-top: 5px;
     border-radius: 50%;
     font-weight: 600;
+  }
+  .scroll img {
+    width: 32px;
+    height: 32px;
   }
 }

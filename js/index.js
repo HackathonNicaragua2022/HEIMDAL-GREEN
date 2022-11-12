@@ -7,7 +7,7 @@ const navMenu = document.getElementById('nav-menu')
 check.addEventListener('click', () => {
   if (check.checked === false) {
     burger.src = 'https://joorkar.github.io/heimdal-green/assets/burger-menu.svg'
-    logoClose.src = 'https://joorkar.github.io/heimdal-green/assets/logo-mobile.svg'
+    logoClose.src = 'https://joorkar.github.io/heimdal-green/assets/logo-desktop.svg'
     navMenu.style.display = 'none'
   } else {
     burger.src = 'https://joorkar.github.io/heimdal-green/assets/burger-menu-close.svg'
