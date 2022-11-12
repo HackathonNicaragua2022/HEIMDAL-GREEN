@@ -9,9 +9,13 @@ body {
 }
 
 /* Nuestra Empresa section*/
-.main .main-our {
-  background-color: var(--secondary-color-dark);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.main-our {
+  background-image: url('../assets/background-services.png');
+  /* background-color: var(--secondary-color-dark);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -20,10 +24,10 @@ body {
   gap: 16px;
   border-radius: 0px 0px 20px 20px;
 }
-.main .mision > div h2,
-.main .vision > div h2,
-.main .objetivo > div h2,
-.main .main-our > div h2 {
+.mision > div h2,
+.vision > div h2,
+.objetivo > div h2,
+.main-our > div h2 {
   font-family: var(--primary-font);
   text-align: center;
   font-size: 24px;
@@ -31,13 +35,15 @@ body {
   color: var(--color-light);
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
 }
-.main .mision > div h2,
-.main .vision > div h2,
-.main .objetivo > div h2 {
+.mision > div h2,
+.vision > div h2,
+.objetivo > div h2 {
   color: var(--color-dark)
 }
 .background,
-.main .main-our .main-our-background {
+.background-vision,
+.main-our-background,
+.background-objetivo {
   position: relative;
   left: 16px;
   top: -11px;
@@ -50,11 +56,11 @@ body {
 .background {
   width: 74px;
 }
-.main .main-p {
+.main-p {
   width: 280px;
   text-align: center;
 }
-.main .main-p p {
+.main-p p {
   font-size: 12px;
   font-weight: 400;
   font-family: var(--secondary-font);
@@ -64,27 +70,30 @@ body {
 
 /* Main-info */
 
-.main .main-info {
+.main-info {
   background-color: var(--color-light);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
 }
-.main .main-info .mision,
-.main .main-info .vision,
-.main .main-info .objetivo {
+.mision,
+.vision,
+.objetivo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.mision {
   margin-top: 30px;
+
 }
 .objetivo {
   margin-bottom: 50px;
 }
-.main .main-info .mision p,
-.main .main-info .vision p,
-.main .main-info .objetivo p {
+.mision p,
+.vision p,
+.objetivo p {
   width: 250px;
   height: 56px;
   font-family: var(--secondary-font);
@@ -93,9 +102,9 @@ body {
   line-height: 14px;
   text-align: center;
 }
-.main .main-info .mision .mision-div img,
-.main .main-info .vision .vision-div img,
-.main .main-info .objetivo .objetivo-div img {
+.mision-div img,
+.vision-div img,
+.objetivo-div img {
   border-radius: 20px;
 }
 
@@ -110,11 +119,173 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-footer .footer-div {
+}.footer-div {
   width: 200px;
   height: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 890px) {
+  .main-our {
+    height: 330px;
+    gap: 0;
+    justify-content: flex-end;
+    padding-bottom: 56px;
+  }
+  .mision > div h2,
+  .vision > div h2,
+  .objetivo > div h2,
+  .main-our > div h2 {
+    font-size: 32px;
+  }
+  .mision > div h2,
+  .vision > div h2,
+  .objetivo > div h2 {
+    color: var(--secondary-color-dark);
+  }
+  .main-p {
+    min-width: 550px;
+  }
+  .mision > div p,
+  .vision > div p,
+  .objetivo > div p,
+  .main-our > div p {
+    padding-top: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .background-vision,
+  .main-our-background,
+  .background-objetivo {
+    left: 16px;
+    top: -11px;
+    width: 252px;
+    height: 12px;
+  }
+  .background {
+    width: 100px;
+    top: -6px;
+  }
+  .background-vision {
+    width: 100px;
+    top: -6px;
+    left: -12px;
+  }
+  .background-objetivo {
+    width: 120px;
+    top: -6px;
+  }
+
+  /* seccion info */
+  .main-info {
+    gap: 0;
+  }
+  .mision,
+  .vision,
+  .objetivo {
+    height: 372px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+  .mision,
+  .objetivo {
+    background-image: url('../assets/background-sheet-left.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .vision {
+    background-image: url('../assets/background-sheet-right.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .objetivo div:first-child,
+  .objetivo p,
+  .mision div:first-child,
+  .mision p {
+    grid-column: 1;
+    margin: 0 auto;
+    color: var(--color-dark);
+    font-size: 18px;
+    line-height: 20px;
+    width: 340px;
+    height: 100px;
+    text-align: left;
+  }
+  .vision div:first-child,
+  .vision p {
+    grid-column: 2;
+    margin: 0 auto;
+    color: var(--color-dark);
+    font-size: 18px;
+    line-height: 20px;
+    width: 340px;
+    height: 140px;
+    text-align: right;
+  }
+  .objetivo div:first-child,
+  .mision div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .vision div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .objetivo-div,
+  .vision-div,
+  .mision-div {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    background-image: url('../assets/img-mision.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  .vision-div {
+    grid-column: 1;
+    background-image: url('../assets/img-vision.svg');
+  }
+  .objetivo-div {
+    background-image: url('../assets/img-objetivo.svg')
+  }
+  .objetivo-div img,
+  .vision-div img,
+  .mision-div img {
+    display: none;
+  }
+  /* Seccion footer */
+  footer {
+    height: 35vh;
+    gap: 12px;
+  }
+  .footer-div {
+    width: 400px;
+    height: 40px;
+  }
+  .footer-div a img {
+    width: 52px;
+    height: 52px;
+  }
+  footer div:nth-child(2) img {
+    width: 200px;
+    height: 82px;
+  }
 }

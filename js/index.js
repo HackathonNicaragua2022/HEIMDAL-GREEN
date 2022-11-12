@@ -4,6 +4,7 @@ const burger = document.getElementById('burger')
 const logoClose = document.getElementById('logoClose')
 const navMenu = document.getElementById('nav-menu')
 
+// Menu nav responsive
 check.addEventListener('click', () => {
   if (check.checked === false) {
     burger.src = 'https://joorkar.github.io/heimdal-green/assets/burger-menu.svg'

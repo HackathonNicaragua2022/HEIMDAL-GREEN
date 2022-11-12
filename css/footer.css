@@ -11,11 +11,15 @@ footer {
   gap: 10px;
 }
 .footer-div {
-  width: 200px;
-  height: 28px;
+  width: 220px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer-div img {
+  width: 32px;
+  height: 32px;
 }
 footer div:nth-child(3) img {
   width: 110px;
@@ -23,7 +27,7 @@ footer div:nth-child(3) img {
 }
 @media (min-width: 890px) {
   footer {
-    height: 30vh;
+    height: 35vh;
     gap: 4px;
   }
   .footer-div {
