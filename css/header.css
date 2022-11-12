@@ -28,7 +28,7 @@ nav ul > div {
 nav ul li a {
   font-family: var(--secondary-font);
   color: var(--color-dark);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   padding: 7px 13px;
   border-radius: 10px;

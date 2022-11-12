@@ -11,14 +11,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 290px;
+  height: 290px;
   background-image: url('../assets/background-form.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   gap: 10px;
 }
-.form .form-h2 h2 {
+.form-h2 h2 {
   width: 190px;
   height: 60px;
   font-family: var(--primary-font);
@@ -27,6 +27,9 @@ body {
   line-height: 28px;
   text-align: center;
   color: var(--color-light);
+}
+.form-h2 img {
+  display: none;
 }
 .form form {
   display: flex;
@@ -47,7 +50,7 @@ body {
   font-size: 10px;
   line-height: 11px;
 }
-.form form .main-cotizar {
+.main-cotizar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +83,7 @@ button {
   min-height: 280px;
   gap: 26px;
 }
-.informacion .informacion-h2 h2 {
+.informacion-h2 h2 {
   width: 190px;
   height: 60px;
   font-family: var(--primary-font);
@@ -90,19 +93,19 @@ button {
   text-align: center;
   color: var(--color-dark);
 }
-.informacion .informacion-div {
+.informacion-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 140px;
   gap: 24px;
 }
-.informacion .informacion-div a {
+.informacion-div a {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.informacion .informacion-div a p {
+.informacion-div a p {
   font-family: var(--secondary-font);
   font-weight: 500;
   font-size: 12px;
@@ -113,7 +116,7 @@ button {
 
 footer {
   height: 20vh;
-  background-color: var(--secondary-color-dark);
+  background-color: var(--primary-color-dark);
   border-radius: 20px 20px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -121,10 +124,95 @@ footer {
   align-items: center;
   gap: 20px;
 }
-footer .footer-div {
+.footer-div {
   width: 200px;
   height: 28px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+@media (min-width: 890px) {
+  .form-h2 {
+    display: flex;
+    align-items: flex-end;
+    height: 110px;
+  }
+  .form-h2 h2 {
+    display: none;
+  }
+  .form-h2 img {
+    display: inline;
+    width: 300px;
+    height: 100px;
+  }
+  .form-h {
+    height: 300px;
+  }
+  .form form {
+    position: absolute;
+    top: 200px;
+    width: 480px;
+    height: 300px;
+    background-color: var(--color-light);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  .form form input {
+    width: 80%;
+    height: 36px;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .main-cotizar {
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    width: 64px;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  button {
+    background: transparent;
+    font-size: 10px;
+    line-height: 9px;
+    padding-bottom: 5px;
+  }
+  .informacion {
+    height: 500px;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+  .informacion-h2 h2 {
+    width: 210px;
+    font-size: 28px;
+  }
+  .informacion-div img {
+    width: 40px;
+    height: 40px;
+  }
+  .informacion-div a p {
+    font-size: 16px;
+  }
+
+  /* section footer */
+  footer {
+    height: 30vh;
+    gap: 12px;
+  }
+  .footer-div {
+    width: 400px;
+    height: 40px;
+    justify-content: space-evenly;
+  }
+  .footer-div a img {
+    width: 52px;
+    height: 52px;
+  }
+  footer div:nth-child(2) img {
+    width: 200px;
+    height: 82px;
+  }
 }
