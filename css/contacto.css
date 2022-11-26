@@ -60,6 +60,10 @@ body {
   width: 62px;
   height: 25px;
   margin-top: 4px;
+  cursor: pointer;
+}
+.main-cotizar a {
+  cursor: pointer;
 }
 button {
   background: transparent;
@@ -71,6 +75,7 @@ button {
   line-height: 9px;
   padding-bottom: 5px;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Informacion */
@@ -174,6 +179,7 @@ footer {
     margin-top: 20px;
     margin-left: 40px;
   }
+
   button {
     background: transparent;
     font-size: 10px;

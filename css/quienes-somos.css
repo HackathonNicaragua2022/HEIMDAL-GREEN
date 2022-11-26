@@ -53,6 +53,12 @@ body {
   opacity: 0.3;
   border-radius: 2px;
 }
+.background-vision {
+  width: 74px;
+}
+.background-objetivo {
+  width: 100px;
+}
 .background {
   width: 74px;
 }
@@ -184,10 +190,13 @@ footer {
   .main-info {
     gap: 0;
   }
+  .main-info article {
+    margin-top: 20px;
+  }
   .mision,
   .vision,
   .objetivo {
-    height: 372px;
+    height: 360px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -196,14 +205,13 @@ footer {
   .mision,
   .objetivo {
     background-image: url('../assets/background-sheet-left.png');
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .vision {
     background-image: url('../assets/background-sheet-right.png');
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
   }
   .objetivo div:first-child,
@@ -216,7 +224,7 @@ footer {
     font-size: 18px;
     line-height: 20px;
     width: 340px;
-    height: 100px;
+    height: 140px;
     text-align: left;
   }
   .vision div:first-child,
@@ -226,7 +234,7 @@ footer {
     color: var(--color-dark);
     font-size: 18px;
     line-height: 20px;
-    width: 340px;
+    width: 360px;
     height: 140px;
     text-align: right;
   }

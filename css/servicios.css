@@ -50,6 +50,14 @@ article {
 .mantenimiento {
   width: 220px;
 }
+.diseño-1,
+.mantenimiento-1 {
+  background: linear-gradient(179.85deg, transparent 36.7%, rgba(217, 217, 217, 0) 85.75%);
+}
+.instalacion,
+.mantenimiento {
+  margin-top: 32px;
+}
 .diseño-2,
 .instalacion-2,
 .mantenimiento-2 {
@@ -102,6 +110,13 @@ article {
   margin-top: 10px;
   border-radius: 0px 0px 10px 10px;
 }
+.diseño-1 img,
+.instalacion-1 img,
+.mantenimiento-1 img {
+  width: 219px;
+  height: 219px;
+  border-radius: 10px 10px 0px 0px;
+}
 .mantenimiento {
   margin-bottom: 91px;
 }
@@ -140,7 +155,6 @@ footer {
   .main-servicios {
     min-height: 172px;
     justify-content: flex-end;
-    padding-bottom: 24px;
     background-color: var(--secondary-color-dark);
   }
   .main-servicios h2 {
@@ -153,16 +167,20 @@ footer {
     width: 148px;
     height: 16px;
   }
+  .instalacion,
+  .mantenimiento {
+    margin-top: 0;
+  }
   .diseño {
     width: 100%;
     height: 460px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     background-color: var(--secondary-color-dark);
     background-image: url('../assets/background-sheet-left.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -224,10 +242,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     background-color: var(--color-light);
     background-image: url('../assets/background-sheet-right.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -270,6 +288,7 @@ footer {
   }
   .instalacion-3 p {
     color: var(--secondary-color-dark);
+    text-align: right;
   }
   #desktop-instalacion {
     display: flex;
@@ -293,10 +312,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     background-color: var(--secondary-color-dark);
     background-image: url('../assets/background-sheet-left.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;

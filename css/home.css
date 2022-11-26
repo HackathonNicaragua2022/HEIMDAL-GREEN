@@ -263,14 +263,16 @@ body {
     min-width: 500px;
     grid-row: 3;
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
   .main-p p {
+    width: 100%;
     font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
     color: var(--color-light);
   }
   .main-our img {
